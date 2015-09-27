@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Passman by mat8913</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Passman</h1>
+        <p>A graphical password manager</p>
+
+        <p class="view"><a href="https://github.com/mat8913/passman">View the Project on GitHub <small>mat8913/passman</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/mat8913/passman/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/mat8913/passman/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/mat8913/passman">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="passman" class="anchor" href="#passman" aria-hidden="true"><span class="octicon octicon-link"></span></a>passman</h1>
+
+<p>Passman is a password manager written in Haskell. It generates passwords from a
+master password and a short string. These strings are to be kept in a text file
+which passman will load to generate passwords. The generated passwords will be
+128 characters by default but can be shortened if required.</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>usage</h2>
+
+<p>On first usage, passman will prompt for a master password. This master password
+must be entered each time a password is generated. To change the master
+password, delete ~/.passman-masterpasswd but note that generated passwords will
+now be different.</p>
+
+<p>To generate a password, passman will prompt for the master password</p>
+
+<p><img src="https://raw.githubusercontent.com/mat8913/passman/storage/enter-password.png" alt="enter-password"></p>
+
+<p>The generated password will then be stored in clipboard. Clicking "OK" on the
+next dialog will clear the clipboard.</p>
+
+<p><img src="https://raw.githubusercontent.com/mat8913/passman/storage/ok.png" alt="OK"></p>
+
+<h2>
+<a id="file-format" class="anchor" href="#file-format" aria-hidden="true"><span class="octicon octicon-link"></span></a>file format</h2>
+
+<p>Separate strings with newlines. If the password needs to be shorter than 128
+characters, add the length to the end of the line separated by a tab. An example
+is provided as example.txt:</p>
+
+<p><img src="https://raw.githubusercontent.com/mat8913/passman/storage/main-screen.png" alt="main-screen"></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/mat8913">mat8913</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
